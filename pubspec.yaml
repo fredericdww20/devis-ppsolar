@@ -1,0 +1,52 @@
+name: devis_ppsolar
+description: Application de devis PPSOLAR — création, édition et envoi depuis tablette et mobile.
+publish_to: 'none'
+version: 1.12.0+22
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.2.0
+  shared_preferences: ^2.2.2
+  google_fonts: ^6.2.1
+  intl: any
+  url_launcher: ^6.2.5
+  image_picker: ^1.0.7
+  image: ^4.1.7
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/logo_ios.png
+    - assets/stamps/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logo_ios.png
+  remove_alpha_ios: true
+  adaptive_icon_background: "#1C2B33"
+  adaptive_icon_foreground: assets/logo.png
